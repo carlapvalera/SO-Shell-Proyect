@@ -1,0 +1,9 @@
+FUNCIONALIDADES:
+Ejecutar más de una tubería en una misma línea. Cuando parseamos además de crearse un árbol este dicho árbol es de prioridad( leyendose de 
+izquierda a derecha, formandose nodos* donde su hijo izquierdo es el comando y el derecho será otra tubería hasta llegar al final de la 
+línea donde tendrá en caso de ser una tubería, otro comando.
+El operador | lo que hace es que mandar la salida del hijo izquierdo a la entrada del hijo derecho, por lo que tener más de una tubería
+en una línea de código enlazará la salida de los nodos* izquierdos con la entrada de los nodos* derechos.
+
+EJEMPLO:
+ERDOS-Shell $ command1 | command2 | command3 

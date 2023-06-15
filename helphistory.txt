@@ -1,0 +1,47 @@
+HISTORY:
+Enseña el historial de los ultimos 10 comandos ejecutados organizados por antiguedad del mas antiguo al menos. El comando history tambien 
+es guardado en el historial.El comando tiene "memoria", cerrar el prompt no hace que se pierdan los comandos escritos, si el shell se 
+cierra mediante el comando exit, si se cerra manual o se apaga la pc, se queda con el estado de la ultima vez que se cerro correctamente.
+
+EJEMPLO:
+ERDOS-Shell $ history
+1: command 1
+2: command 2 > file
+3: command 5 | command 6 #comentario de ese command
+4: history
+ERDOS-Shell $
+
+
+
+EJEMPLO:
+ERDOS-Shell $ history
+1: command 1
+2: command 2 > file
+3: command 5 | command 6 #comentario de ese command
+4: history
+ERDOS-Shell $ exit
+user@machine $ ./a.out
+ERDOS-Shell $ history
+1: command 1
+2: command 2 > file
+3: command 5 | command 6 #comentario de ese command
+4: history
+5: history
+
+EJEMPLO:
+ERDOS-Shell $ history
+1: command 1
+2: command 2 > file
+3: command 5 | command 6 #comentario de ese command
+4: history
+ERDOS-Shell $ again 1
+ERDOS-Shell $ history
+1: command 1
+2: command 2 > file
+3: command 5 | command 6 #comentario de ese command
+4: history
+5: command 1
+6: history
+ERDOS-Shell $
+
+PD again es imprescindible que al menos haya un espacio entre again y el numero.
